@@ -34,7 +34,7 @@ Once in the Raspberry Pi Configuration Tool make sure that the camera software i
 
 ![alt text][image3]
 
-## 02. Python code 1
+## 02. Python code 1: video
 
 Run the following python code to display on the raspberry pi screen the image captured by the picamera.
 
@@ -49,7 +49,7 @@ sleep(10)
 camera.stop_preview()
 ```
 
-## 03. Python code 2
+## 03. Python code 2: photo
 
 Run the following python code to take a picture with the picamera and save the image on the desktop with the name **image.jpg**.
 
