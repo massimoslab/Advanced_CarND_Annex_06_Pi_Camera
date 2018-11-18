@@ -12,7 +12,7 @@ The Raspberry Pi camera is a an official product of the Raspberry Pi Foundation.
 
 Be careful when purchasing the picamera online as there are several replicas that can be found with much lower quality. Having said that there is a type of camera that is an unofficial camera but that has several advantages: a wide-angle lens, also called fish-eye lens.
 
-For this project I have used two type of cameras. The first one is the official Raspberry 8-megapixel picamera:
+For this project I have used two type of cameras. The first one is the official Raspberry 8-megapixel picamera, which will be used for high accuracy tasks:
 
 ![alt text][image4]
 
@@ -20,43 +20,38 @@ The second camera is a cheaper fish-eye camera, that will be used for lower accu
 
 ![alt text][image5]
 
-## 01. The motor
+## 01. Assembly
 
-The motor is a 380 high-speed motor which can achieve significant speed. The rear mechanism consists of a differential mechanism mounted within a pre-assembled gear box. The biggest advantage of the differential mechanism is that when turning the internal wheel can have a different speed from the external wheel.
+Start by making sure that the Raspberry Pi is switched off. Locate the camera connector slot (notice that there are two slots on the Raspberry Pi 3), open the connector by pulling slightly the plastic tab, insert the flat cable and push the plastic tab back to its original position. Once connected the camera will look like this:
 
-![alt text][image3]
+![alt text][image1]
 
-The rear gear reduction mechanism that is extremely simple to mount. The motor and the gears are made of metal and they are very resistant. The issue I found with this car chassis is that it is a bit loud when running at full speed.
-
-## 02. The servo
-
-The servo is a MR996 servo system. The steering servo is attached to the front of the chassis through two L-shaped metal supports. The servo drives the steering angle of the front wheels through two adjustable bars, one of which connects both front wheels and the other connect to one of the two wheels.
-
-![alt text][image5]
-
-## 03. Car chassis assembly
-
-Start by assembling the rear mechanism. Firstly fix the rear gear box to the metal base by using the appropriate screws. Ensure that no dirt or small debris do not enter the gear mechanism from the bottom. Once the mechanism has been fixed, connect the metal bar suspensions with the two rear bearings holders. Finally assemble the wheels and fix them with the appropriate bolts.
-
-![alt text][image4]
-
-As a second step, assemble the front steering mechanism. First of all fix the servo with the two provided L-shaped bars to the metal base as shown below without fixing the bar, which will be fixed later.
-
-![alt text][image6]
-
-Now, fix the bearing housing to the two front wheels and fix the wheel with the appropriate bolt.
+Switch on the Raspberry Pi and open the Raspberry Pi Configuration Tool from the main menu:
 
 ![alt text][image2]
 
-Once the two front wheel have been fixed to the bearing housing, you can connect them to the metal base as shown in the image below:
+Once in the Raspberry Pi Configuration Tool make sure that the camera software is enabled:
 
-![alt text][image7]
+![alt text][image3]
 
-Finally, you can connect the adjustable plastic-metal bars to one of the bearing housing.
+## 02. Python code 1
 
-![alt text][image8]
+Run the following python code to display on the raspberry pi screen the image captured by the picamera.
 
-## 04. Python code
+```
+from picamera import PiCamera
+from time import sleep
+
+camera = PiCamera()
+
+camera.start_preview()
+sleep(10)
+camera.stop_preview()
+```
+
+## 03. Python code 2
+
+Run the following python code to take a picture with the picamera and save the image on the desktop with the name **image.jpg**.
 
 ```
 camera.start_preview()
@@ -66,8 +61,8 @@ camera.stop_preview()
 ```
 
 ## 04. Purchases
-The car chassis can be purchased on the internet. I have purchased mine from ebay:
-[Purchase a car chassis here](https://store.arduino.cc/)
+The official picamera can be purchased on the Raspberry Pi Foundation website:
+[Purchase a picamera here](https://www.raspberrypi.org/products/camera-module-v2/)
 
 ## Author
 
