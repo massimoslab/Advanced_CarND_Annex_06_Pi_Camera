@@ -1,23 +1,24 @@
 [image1]: ./images/picam_1.jpg
 [image2]: ./images/picam_2.png
 [image3]: ./images/picam_3.png
+[image4]: ./images/picam_4.jpg
+[image5]: ./images/picam_5.jpg
 
 # Annex 06 : Raspberry Pi camera
 
-For this project you need to purchase a four-wheel car chassis with rear wheel propulsion and front wheel steering mechanism.
+The Raspberry Pi camera is a an official product of the Raspberry Pi Foundation. There are two official version that you can purchase:
+1. a 5-megapixel model released in 2013; and
+2. an 8-megapixel model released in 2016.
 
-Traditional four-wheel car chassis that you can find in the internet have a four-motor mechanism and steering is achieved by activating the two motors on either side of the car.
+Be careful when purchasing the picamera online as there are several replicas that can be found with much lower quality. Having said that there is a type of camera that is an unofficial camera but that has several advantages: a wide-angle lens, also called fish-eye lens.
 
-A car chassis with a front wheel steering mechanism allows you to steer the two front wheels like in a real car. By learning how t o use this car chassis you will be able to:
+For this project I have used two type of cameras. The first one is the official Raspberry 8-megapixel picamera:
 
-1. use all techniques that you will learn or have already learned in the CarND courses;
-2. familiarize yourself with the mechanisms and issues that correspond to real-world problems.
+![alt text][image4]
 
-The image below shows the car chassis as it is after assembly:
+The second camera is a cheaper fish-eye camera, that will be used for lower accuracy tasks:
 
-![alt text][image1]
-
-The wheel system is well designed. There are two bearings on either side of the wheel that make the system very efficient and resistance free.
+![alt text][image5]
 
 ## 01. The motor
 
