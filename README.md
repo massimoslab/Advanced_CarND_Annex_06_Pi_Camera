@@ -22,7 +22,7 @@ The second camera is a cheaper fish-eye camera, that will be used for lower accu
 
 ## 01. Assembly
 
-Start by making sure that the Raspberry Pi is switched off. Locate the camera connector slot (notice that there are two slots on the Raspberry Pi 3), open the connector by pulling slightly the plastic tab, insert the flat cable and push the plastic tab back to its original position. Once connected the camera will look like this:
+Start by making sure that the Raspberry Pi is switched off. Locate the camera connector slot (notice that there are two slots on the Raspberry Pi 3), open the connector slot by pulling slightly the plastic tab, insert the flat cable and push the plastic tab back to its original position. Once connected the camera will look like this:
 
 ![alt text][image1]
 
